@@ -9,7 +9,7 @@ const model = new OpenAI({
 });
 
 const res = await model.call(
-  "What would be a good company name a company that makes colorful socks?"
+  "What's a good idea for an application to build with GPT-3?"
 );
 
 console.log(res);

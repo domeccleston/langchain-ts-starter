@@ -17,5 +17,5 @@ This uses the same tsconfig and build setup as the [examples repo](https://githu
 - Clone this repository
 - `npm install`
 - Write your code in `src`
-- `turbo run build lint check` to run build scripts quickly in parallel
+- `npx turbo run build lint check` to run build scripts quickly in parallel
 - `npm start` to run your program

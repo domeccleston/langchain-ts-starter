@@ -1,6 +1,10 @@
 {
-  "extends": "@tsconfig/recommended",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "lib": ["ES2021", "ES2022.Object", "DOM"],
     "target": "es2017",
@@ -8,6 +12,9 @@
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    },
     "declaration": true,
     "experimentalDecorators": true,
     "noImplicitReturns": true,
@@ -15,7 +22,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "useDefineForClassFields": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "noEmit": true
   },
   "exclude": ["node_modules/", "dist/", "tests/"],
   "include": ["./src"]

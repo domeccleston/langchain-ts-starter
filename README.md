@@ -10,6 +10,7 @@ This uses the same tsconfig and build setup as the [examples repo](https://githu
 - .env file configuration
 - ESLint and Prettier for formatting
 - Turborepo to quickly run build scripts
+- `tsup` to bundle Typescript code
 - `tsx` to quickly run compiled code
 
 # How to use
